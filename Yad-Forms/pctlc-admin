@@ -1,0 +1,27 @@
+#!/bin/bash
+yad --form \
+    --title="PCTLC Admin" \
+    --columns"=3" \
+    --width="940" \
+    --height="390" \
+    --text="PCTLC Admin" \
+    --image="/usr/bin/Yad/PCTLC-LOGO-Small.png" \
+--field="Install Icons From Github!/usr/bin/Yad/admin.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Admin-Scripts/icons.sh'" \
+--field="Install Themes From Github!/usr/bin/Yad/admin.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Admin-Scripts/themes.sh'" \
+--field="Install Icons From Local File!/usr/bin/Yad/admin.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Admin-Scripts/icons-from-file.sh'" \
+--field="Install Themes From Local File!/usr/bin/Yad/admin.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Admin-Scripts/themes-from-file.sh'" \
+--field="Install Plex Media Server!/usr/bin/Yad/plex.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Admin-Scripts/plexmediaserver-install.sh'" \
+--field="Start Plex Media Server!/usr/bin/Yad/plex.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Admin-Scripts/start-plexmediaserver.sh'" \
+--field="Enable Plex Media Server!/usr/bin/Yad/plex.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Admin-Scripts/enable-plexmediaserver.sh'" \
+--field="Stop Plex Media Server!/usr/bin/Yad/plex.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Admin-Scripts/stop-plexmediaserver.sh'" \
+--field="Disable Plex Media Server!/usr/bin/Yad/plex.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Admin-Scripts/disable-plexmediaserver.sh'" \
+--field="Plex Media Server Status!/usr/bin/Yad/plex.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Admin-Scripts/status-plexmediaserver.sh'" \
+--field="Install Plex Media Player Arch!/usr/bin/Yad/plex.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Admin-Scripts/install-plex-media-player.sh'" \
+--field="Remove Plex Media Server!/usr/bin/Yad/plex.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Admin-Scripts/plexmediaserver-remove.sh'" \
+--field="Remove Plex Media Player Arch!/usr/bin/Yad/plex.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Admin-Scripts/remove-plex-media-player.sh'" \
+--field="Copy Wallpapers!/usr/bin/Yad/admin.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Admin-Scripts/backgrounds.sh'" \
+--field="Remove Age Verification Arch!/usr/bin/Yad/age.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Admin-Scripts/remove-age-verification-arch.sh'" \
+--field="Mask Age Verification Arch!/usr/bin/Yad/age.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Admin-Scripts/mask-age-verification-arch.sh'" \
+--field="Copy User Directory!/usr/bin/Yad/admin.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Admin-Scripts/user-dirs-dirs.sh'" \
+--field="Download Archlinux Scripts Auto!/usr/bin/Yad/scripts.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Admin-Scripts/archlinux-scripts-auto.sh'" \
+--button=Exit:1

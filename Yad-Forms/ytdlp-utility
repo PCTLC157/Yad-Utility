@@ -1,0 +1,15 @@
+#!/bin/bash
+yad --form \
+    --title="YT-DLP Utility" \
+    --columns"=1" \
+    --width="740" \
+    --height="390" \
+    --text="YT-DLP Utility" \
+    --image="/usr/bin/Yad/PCTLC-LOGO-Small.png" \
+--field="Install YT-DLP!/usr/bin/Yad/youtube-dl.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/ytdlp-scripts/install-ytdlp.sh'" \
+--field="Install YT-DLP (KDE)!/usr/bin/Yad/youtube-dl.svg!":fbtn "konsole -e '/usr/bin/Yad/ytdlp-scripts/install-ytdlp.sh'" \
+--field="Download Audio!/usr/bin/Yad/youtube-dl.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/ytdlp-scripts/audio-dl.sh'" \
+--field="Download Audio (KDE)!/usr/bin/Yad/youtube-dl.svg!":fbtn "konsole -e '/usr/bin/Yad/ytdlp-scripts/audio-dl.sh'" \
+--field="Download Video!/usr/bin/Yad/youtube-dl.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/ytdlp-scripts/video-dl.sh'" \
+--field="Download Video (KDE)!/usr/bin/Yad/youtube-dl.svg!":fbtn "konsole -e '/usr/bin/Yad/ytdlp-scripts/video-dl.sh'" \
+--button=Exit:1

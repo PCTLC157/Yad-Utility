@@ -1,0 +1,29 @@
+#!/bin/bash
+yad --form \
+    --title="Browser Installer" \
+    --columns"=2" \
+    --width="740" \
+    --height="390" \
+    --text="Browser Installer For Debian/Ubuntu Based Systems" \
+    --image="/usr/bin/Yad/PCTLC-LOGO-Small.png" \
+--field="Install Firefox!/usr/bin/Yad/firefox.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/firefox-ubuntu.sh'" \
+--field="Remove Firefox!/usr/bin/Yad/firefox.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/remove-firefox-ubuntu.sh'" \
+--field="Install Google Chrome!/usr/bin/Yad/google-chrome.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/google-chrome-ubuntu.sh'" \
+--field="Remove Google Chrome!/usr/bin/Yad/google-chrome.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/remove-google-chrome-ubuntu.sh'" \
+--field="Install Brave!/usr/bin/Yad/brave.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/brave-ubuntu.sh'" \
+--field="Remove Brave!/usr/bin/Yad/brave.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/remove-brave-ubuntu.sh'" \
+--field="Remove Brave Repo!/usr/bin/Yad/brave.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/remove-brave-repo-ubuntu.sh'" \
+--field="Install Vivaldi!/usr/bin/Yad/vivaldi.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/vivaldi-ubuntu.sh'" \
+--field="Remove Vivaldi!/usr/bin/Yad/vivaldi.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/remove-vivaldi-ubuntu.sh'" \
+--field="Install Opera!/usr/bin/Yad/opera.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/opera-ubuntu.sh'" \
+--field="Remove Opera!/usr/bin/Yad/opera.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/remove-opera-ubuntu.sh'" \
+--field="Install Microsoft Edge!/usr/bin/Yad/web-browser.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/edge-ubuntu.sh'" \
+--field="Remove Microsoft Edge!/usr/bin/Yad/web-browser.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/remove-edge-ubuntu.sh'" \
+--button=Exit:1
+
+
+
+
+       
+
+

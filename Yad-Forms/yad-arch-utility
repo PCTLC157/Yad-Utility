@@ -1,0 +1,16 @@
+#!/bin/bash
+yad --form \
+    --title="Arch Utility" \
+    --columns"=1" \
+    --width="640" \
+    --height="390" \
+    --text="Arch Update Utility" \
+    --image="/usr/bin/Yad/PCTLC-LOGO-Small.png" \
+--field="Update Arch Database!/usr/bin/Yad/update.svg!":fbtn "gnome-terminal -e 'sudo pacman -Syy'" \
+--field="Update Arch!/usr/bin/Yad/update.svg!":fbtn "gnome-terminal -e 'sudo pacman -Syu'" \
+--field="Update Arch Keyring!/usr/bin/Yad/keyring.svg!":fbtn "gnome-terminal -e 'sudo pacman -Sy archlinux-keyring'" \
+--field="Update Arch Mirror!/usr/bin/Yad/mirror.svg!":fbtn "gnome-terminal -e 'sudo reflector --country 'Australia' --latest 5 --age 2 --fastest 5 --sort rate --protocol https --save /etc/pacman.d/mirrorlist'" \
+--field="Update Flatpak!/usr/bin/Yad/flatpak.svg!":fbtn "gnome-terminal -e 'flatpak update'" \
+--field="Remove Orphan Packages Arch!/usr/bin/Yad/arch-logo.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Arch-Scripts/remove-orphan-packages.sh'" \
+--field="Clean Package Cache Arch!/usr/bin/Yad/arch-logo.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Arch-Scripts/clean-package-cache.sh'" \
+--button=Exit:1

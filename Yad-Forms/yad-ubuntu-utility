@@ -1,0 +1,17 @@
+#!/bin/bash
+yad --form \
+    --title="Ubuntu Based Only Utility" \
+    --columns"=1" \
+    --width="940" \
+    --height="390" \
+    --text="Utility For Ubuntu Based Systems Only" \
+    --image="/usr/bin/Yad/PCTLC-LOGO-Small.png" \
+--field="Check Snap List!/usr/bin/Yad/snap.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/snap-list-ubuntu.sh'" \
+--field="Remove Snap Ubuntu 22.04!/usr/bin/Yad/snap.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/remove-snap-ubuntu-2204.sh'" \
+--field="Block Snap!/usr/bin/Yad/snap.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/block-snap.sh'" \
+--field="Restore Snap!/usr/bin/Yad/snap1.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/restore-snap.sh'" \
+--field="Restore Firefox Snap!/usr/bin/Yad/firefox.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/snap-firefox-install.sh'" \
+--field="Update Ubuntu!/usr/bin/Yad/update-1.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/update-ubuntu.sh'" \
+--field="Upgrade Ubuntu!/usr/bin/Yad/upgrade.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/upgrade-ubuntu.sh'" \
+--button=Exit:1
+

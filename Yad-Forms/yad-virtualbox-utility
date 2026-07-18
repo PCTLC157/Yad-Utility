@@ -1,0 +1,23 @@
+#!/bin/bash
+yad --form \
+    --title="Virtualbox Utility" \
+    --columns"=2" \
+    --width="740" \
+    --height="390" \
+    --text="Virtualbox Utility" \
+    --image="/usr/bin/Yad/PCTLC-LOGO-Small.png" \
+--field="Install Virtualbox Arch Base!/usr/bin/Yad/virtualbox.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Arch-Scripts/install-virtualbox-arch.sh'" \
+--field="Remove Virtualbox Arch Base!/usr/bin/Yad/virtualbox.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Arch-Scripts/remove-virtualbox-arch.sh'" \
+--field="Update kernel and Linux Headers Arch Base!/usr/bin/Yad/kernel.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Arch-Scripts/update-kernel-and-headers-arch.sh'" \
+--field="Install Virtualbox Ubuntu Base!/usr/bin/Yad/ubuntu.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/install-virtualbox-ubuntu.sh'" \
+--field="Remove Virtualbox Ubuntu Base!/usr/bin/Yad/ubuntu.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/remove-virtualbox-ubuntu.sh'" \
+--field="Run Modprobe VBoxDrv (All Bases)!/usr/bin/Yad/kernel.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Virt-Manager-Scripts/modprobe-vboxdrv.sh'" \
+--field="Install Virtualbox With Solus Software Center!/usr/bin/Yad/virtualbox.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Solus-Scripts/solus-software-center.sh'" \
+--field="Remove Virtualbox With Solus Software Center!/usr/bin/Yad/virtualbox.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Solus-Scripts/solus-software-center.sh'" \
+--field="Current Headers Install (Solus)!/usr/bin/Yad/kernel.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Solus-Scripts/current-headers-install.sh'" \
+--field="LTS Headers Install (Solus)!/usr/bin/Yad/kernel.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Solus-Scripts/lts-headers-install.sh'" \
+--field="Check Kernel (All Bases)!/usr/bin/Yad/kernel.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Virt-Manager-Scripts/check-kernel.sh'" \
+--field="Download Virtualbox Extension Pack!/usr/bin/Yad/virtualbox-1.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Virt-Manager-Scripts/virtualbox-extension-pack-download.sh'" \
+--field="Add Virtualbox USB Support!/usr/bin/Yad/vbox-usb.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Virt-Manager-Scripts/usb-vboxusers.sh'" \
+--field="Add Virtualbox Shared Folder Support!/usr/bin/Yad/vboxsf.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Virt-Manager-Scripts/vboxsf.sh'" \
+--button=Exit:1

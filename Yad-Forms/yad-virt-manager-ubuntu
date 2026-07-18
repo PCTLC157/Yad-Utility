@@ -1,0 +1,27 @@
+#!/bin/bash
+yad --form \
+    --title="Virt Manager Utility" \
+    --columns"=2" \
+    --width="740" \
+    --height="390" \
+    --text="Virt Manager Utility" \
+    --image="/usr/bin/Yad/PCTLC-LOGO-Small.png" \
+--field="Install Virt Manager Arch Base!/usr/bin/Yad/arch-logo.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Arch-Scripts/install-virt-manager-arch.sh'" \
+--field="Remove Virt Manager Arch Base!/usr/bin/Yad/arch-logo.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Arch-Scripts/remove-virt-manager-arch.sh'" \
+--field="Install Virt Manager Ubuntu Base!/usr/bin/Yad/ubuntu.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/install-virt-manager-ubuntu.sh'" \
+--field="Remove Virt Manager Ubuntu Base!/usr/bin/Yad/ubuntu.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Ubuntu-Scripts/remove-virt-manager-ubuntu.sh'" \
+--field="Install Virt Manager Solus!/usr/bin/Yad/solus-logo.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Solus-Scripts/install-virt-manager-solus.sh'" \
+--field="Remove Virt Manager Solus!/usr/bin/Yad/solus-logo.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Solus-Scripts/remove-virt-manager-solus.sh'" \
+--field="Virt Manager Group Permissions!/usr/bin/Yad/virt-manager.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Virt-Manager-Scripts/add-virt-manager-group.sh'" \
+--field="Virtual Machine Manager (Network Error)!/usr/bin/Yad/virt-manager-o.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Virt-Manager-Scripts/virt-manager-network-error.sh'" \
+--field="Virtual Machine Manager (Auto Start Network)!/usr/bin/Yad/virt-manager-o.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Virt-Manager-Scripts/virt-manager-network-autostart.sh'" \
+--field="Virtual Machine Manager Shared Folder Settings!/usr/bin/Yad/virt-manager-o.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Virt-Manager-Scripts/virt-manager-settings.sh'" \
+--field="Start LibvirtD!/usr/bin/Yad/virt-manager-g.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Virt-Manager-Scripts/start-libvirtd-ubuntu.sh'" \
+--field="Enable LibvirtD!/usr/bin/Yad/virt-manager-g.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Virt-Manager-Scripts/enable-libvirtd-ubuntu.sh'" \
+--field="LibvirtD Status!/usr/bin/Yad/virt-manager-p.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Virt-Manager-Scripts/libvirtd-status.sh'" \
+--field="Stop LibvirtD!/usr/bin/Yad/virt-manager-r.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Virt-Manager-Scripts/stop-libvirtd-ubuntu.sh'" \
+--field="Disable LibvirtD!/usr/bin/Yad/virt-manager-r.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Virt-Manager-Scripts/disable-libvirtd-ubuntu.sh'" \
+--field="Mount Virt Manager Shared Folder (VM ONLY)!/usr/bin/Yad/virt-manager-o.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Virt-Manager-Scripts/mount-virt-manager-shared-folder.sh'" \
+--field="Add Shared Folder Command to Fstab (VM ONLY)!/usr/bin/Yad/virt-manager-o.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Virt-Manager-Scripts/add-shared-folder-fstab.sh'" \
+--field="Fstab Command For Automounting Shared Folder (VM ONLY)!/usr/bin/Yad/virt-manager-o.svg!":fbtn "gnome-terminal -e '/usr/bin/Yad/Virt-Manager-Scripts/fstab-command-for-shared-folder.sh'" \
+--button=Exit:1
