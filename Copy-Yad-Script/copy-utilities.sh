@@ -42,17 +42,17 @@ done
 arch() {
 sudo pacman -Sy
 sudo pacman -S yad
-chmod -R u+x ~/Yad-PCTLC/
-sudo cp -rp ~/Yad-PCTLC /usr/bin/Yad
+chmod -R u+x ~/Yad-Utility/
+sudo cp -rp ~/Yad-Utility /usr/bin/Yad
 cd ~/.local/share
 mkdir -p applications
-sudo cp -rp ~/Yad-PCTLC/Desktop-Files/arch-browser-installer.desktop ~/.local/share/applications/arch-browser-installer.desktop
-sudo cp -rp ~/Yad-PCTLC/Desktop-Files/arch-utility.desktop ~/.local/share/applications/arch-utility.desktop
-sudo cp -rp ~/Yad-PCTLC/Desktop-Files/install-of-flatpak-and-apps.desktop ~/.local/share/applications/install-of-flatpak-and-apps.desktop
-sudo cp -rp ~/Yad-PCTLC/Desktop-Files/yad-virt-manager.desktop ~/.local/share/applications/yad-virt-manager.desktop
-sudo cp -rp ~/Yad-PCTLC/Desktop-Files/yad-virtualbox-utility.desktop ~/.local/share/applications/yad-virtualbox-utility.desktop
-sudo cp -rp ~/Yad-PCTLC/Desktop-Files/yad-ytdlp.desktop ~/.local/share/applications/yad-ytdlp.desktop
-sudo cp -rp ~/Yad-PCTLC/Desktop-Files/pctlc-admin.desktop ~/.local/share/applications/pctlc-admin.desktop
+sudo cp -rp ~/Yad-Utility/Desktop-Files/arch-browser-installer.desktop ~/.local/share/applications/arch-browser-installer.desktop
+sudo cp -rp ~/Yad-Utility/Desktop-Files/arch-utility.desktop ~/.local/share/applications/arch-utility.desktop
+sudo cp -rp ~/Yad-Utility/Desktop-Files/install-of-flatpak-and-apps.desktop ~/.local/share/applications/install-of-flatpak-and-apps.desktop
+sudo cp -rp ~/Yad-Utility/Desktop-Files/yad-virt-manager.desktop ~/.local/share/applications/yad-virt-manager.desktop
+sudo cp -rp ~/Yad-Utility/Desktop-Files/yad-virtualbox-utility.desktop ~/.local/share/applications/yad-virtualbox-utility.desktop
+sudo cp -rp ~/Yad-Utility/Desktop-Files/yad-ytdlp.desktop ~/.local/share/applications/yad-ytdlp.desktop
+sudo cp -rp ~/Yad-Utility/Desktop-Files/pctlc-admin.desktop ~/.local/share/applications/pctlc-admin.desktop
 }
 #
 #e:Remove Arch Desktop Files##
@@ -70,16 +70,16 @@ sudo rm ~/.local/share/applications/pctlc-admin.desktop
 solus() {
 sudo eopkg update-repo
 sudo eopkg install yad
-chmod -R u+x ~/Yad-PCTLC/
-sudo cp -rp ~/Yad-PCTLC /usr/bin/Yad
+chmod -R u+x ~/Yad-Utility/
+sudo cp -rp ~/Yad-Utility /usr/bin/Yad
 cd ~/.local/share
 mkdir -p applications
-sudo cp -rp ~/Yad-PCTLC/Desktop-Files/solus-browser-installer.desktop ~/.local/share/applications/solus-browser-installer.desktop
-sudo cp -rp ~/Yad-PCTLC/Desktop-Files/install-of-flatpak-and-apps.desktop ~/.local/share/applications/install-of-flatpak-and-apps.desktop
-sudo cp -rp ~/Yad-PCTLC/Desktop-Files/yad-virt-manager.desktop ~/.local/share/applications/yad-virt-manager.desktop
-sudo cp -rp ~/Yad-PCTLC/Desktop-Files/yad-virtualbox-utility.desktop ~/.local/share/applications/yad-virtualbox-utility.desktop
-sudo cp -rp ~/Yad-PCTLC/Desktop-Files/yad-ytdlp.desktop ~/.local/share/applications/yad-ytdlp.desktop
-sudo cp -rp ~/Yad-PCTLC/Desktop-Files/pctlc-admin.desktop ~/.local/share/applications/pctlc-admin.desktop
+sudo cp -rp ~/Yad-Utility/Desktop-Files/solus-browser-installer.desktop ~/.local/share/applications/solus-browser-installer.desktop
+sudo cp -rp ~/Yad-Utility/Desktop-Files/install-of-flatpak-and-apps.desktop ~/.local/share/applications/install-of-flatpak-and-apps.desktop
+sudo cp -rp ~/Yad-Utility/Desktop-Files/yad-virt-manager.desktop ~/.local/share/applications/yad-virt-manager.desktop
+sudo cp -rp ~/Yad-Utility/Desktop-Files/yad-virtualbox-utility.desktop ~/.local/share/applications/yad-virtualbox-utility.desktop
+sudo cp -rp ~/Yad-Utility/Desktop-Files/yad-ytdlp.desktop ~/.local/share/applications/yad-ytdlp.desktop
+sudo cp -rp ~/Yad-Utility/Desktop-Files/pctlc-admin.desktop ~/.local/share/applications/pctlc-admin.desktop
 }
 #
 #f:Remove Solus Desktop Files
@@ -96,17 +96,17 @@ sudo rm ~/.local/share/applications/pctlc-admin.desktop
 ubuntu() {
 sudo apt update
 sudo apt install yad
-chmod -R u+x ~/Yad-PCTLC/
-sudo cp -rp ~/Yad-PCTLC /usr/bin/Yad
+chmod -R u+x ~/Yad-Utility/
+sudo cp -rp ~/Yad-Utility /usr/bin/Yad
 cd ~/.local/share
 mkdir -p applications
-sudo cp -rp ~/Yad-PCTLC/Desktop-Files/ubuntu-browser-installer.desktop ~/.local/share/applications/ubuntu-browser-installer.desktop
-sudo cp -rp ~/Yad-PCTLC/Desktop-Files/ubuntu-utility.desktop ~/.local/share/applications/ubuntu-utility.desktop
-sudo cp -rp ~/Yad-PCTLC/Desktop-Files/install-of-flatpak-and-apps.desktop ~/.local/share/applications/install-of-flatpak-and-apps.desktop
-sudo cp -rp ~/Yad-PCTLC/Desktop-Files/yad-virt-manager-ubuntu.desktop ~/.local/share/applications/yad-virt-manager-ubuntu.desktop
-sudo cp -rp ~/Yad-PCTLC/Desktop-Files/yad-virtualbox-utility.desktop ~/.local/share/applications/yad-virtualbox-utility.desktop
-sudo cp -rp ~/Yad-PCTLC/Desktop-Files/yad-ytdlp.desktop ~/.local/share/applications/yad-ytdlp.desktop
-sudo cp -rp ~/Yad-PCTLC/Desktop-Files/pctlc-admin.desktop ~/.local/share/applications/pctlc-admin.desktop
+sudo cp -rp ~/Yad-Utility/Desktop-Files/ubuntu-browser-installer.desktop ~/.local/share/applications/ubuntu-browser-installer.desktop
+sudo cp -rp ~/Yad-Utility/Desktop-Files/ubuntu-utility.desktop ~/.local/share/applications/ubuntu-utility.desktop
+sudo cp -rp ~/Yad-Utility/Desktop-Files/install-of-flatpak-and-apps.desktop ~/.local/share/applications/install-of-flatpak-and-apps.desktop
+sudo cp -rp ~/Yad-Utility/Desktop-Files/yad-virt-manager-ubuntu.desktop ~/.local/share/applications/yad-virt-manager-ubuntu.desktop
+sudo cp -rp ~/Yad-Utility/Desktop-Files/yad-virtualbox-utility.desktop ~/.local/share/applications/yad-virtualbox-utility.desktop
+sudo cp -rp ~/Yad-Utility/Desktop-Files/yad-ytdlp.desktop ~/.local/share/applications/yad-ytdlp.desktop
+sudo cp -rp ~/Yad-Utility/Desktop-Files/pctlc-admin.desktop ~/.local/share/applications/pctlc-admin.desktop
 }
 #
 #g:Remove Ubuntu Desktop Files##
@@ -137,17 +137,17 @@ menu
 #archkde() {
 #sudo pacman -Sy
 #sudo pacman -S yad
-#chmod -R u+x ~/Yad-PCTLC/
-#sudo cp -rp ~/Yad-PCTLC /usr/bin/Yad
+#chmod -R u+x ~/Yad-Utility/
+#sudo cp -rp ~/Yad-Utility /usr/bin/Yad
 #cd ~/.local/share
 #mkdir -p applications
-#sudo cp -rp ~/Yad-PCTLC/Desktop-Files/arch-kde-browser-installer.desktop ~/.local/share/applications/arch-kde-browser-installer.desktop
-#sudo cp -rp ~/Yad-PCTLC/Desktop-Files/arch-kde-utility.desktop ~/.local/share/applications/arch-kde-utility.desktop
-#sudo cp -rp ~/Yad-PCTLC/Desktop-Files/install-of-flatpak-and-apps-kde.desktop ~/.local/share/applications/install-of-flatpak-and-apps-kde.desktop
-#sudo cp -rp ~/Yad-PCTLC/Desktop-Files/yad-kde-virt-manager.desktop ~/.local/share/applications/yad-kde-virt-manager.desktop
-#sudo cp -rp ~/Yad-PCTLC/Desktop-Files/yad-virtualbox-kde-utility.desktop ~/.local/share/applications/yad-virtualbox-kde-utility.desktop
-#sudo cp -rp ~/Yad-PCTLC/Desktop-Files/yad-ytdlp.desktop ~/.local/share/applications/yad-ytdlp.desktop
-#sudo cp -rp ~/Yad-PCTLC/Desktop-Files/pctlc-admin.desktop ~/.local/share/applications/pctlc-admin.desktop
+#sudo cp -rp ~/Yad-Utility/Desktop-Files/arch-kde-browser-installer.desktop ~/.local/share/applications/arch-kde-browser-installer.desktop
+#sudo cp -rp ~/Yad-Utility/Desktop-Files/arch-kde-utility.desktop ~/.local/share/applications/arch-kde-utility.desktop
+#sudo cp -rp ~/Yad-Utility/Desktop-Files/install-of-flatpak-and-apps-kde.desktop ~/.local/share/applications/install-of-flatpak-and-apps-kde.desktop
+#sudo cp -rp ~/Yad-Utility/Desktop-Files/yad-kde-virt-manager.desktop ~/.local/share/applications/yad-kde-virt-manager.desktop
+#sudo cp -rp ~/Yad-Utility/Desktop-Files/yad-virtualbox-kde-utility.desktop ~/.local/share/applications/yad-virtualbox-kde-utility.desktop
+#sudo cp -rp ~/Yad-Utility/Desktop-Files/yad-ytdlp.desktop ~/.local/share/applications/yad-ytdlp.desktop
+#sudo cp -rp ~/Yad-Utility/Desktop-Files/pctlc-admin.desktop ~/.local/share/applications/pctlc-admin.desktop
 #}
 
 ##MENU##
