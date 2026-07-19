@@ -31,30 +31,30 @@ cd /usr/share/icons/
 sudo rm /usr/share/icons/win11-blue.tar.xz
 sudo rm -r /usr/share/icons/win11-blue
 ###############################WE10X######################################
-sudo cp /usr/bin/Yad/icons/We10X-special-main.tar.xz /usr/share/icons/We10X-special-main.tar.xz
-cd /usr/share/icons/
-sudo tar xf We10X-special-main.tar.xz
-sudo rm /usr/share/icons/We10X-special-main.tar.xz
+#sudo cp /usr/bin/Yad/icons/We10X-special-main.tar.xz /usr/share/icons/We10X-special-main.tar.xz
+#cd /usr/share/icons/
+#sudo tar xf We10X-special-main.tar.xz
+#sudo rm /usr/share/icons/We10X-special-main.tar.xz
 ###############################Wow64######################################
-sudo cp /usr/bin/Yad/icons/Wow64-Icons.tar.xz /usr/share/icons/Wow64-Icons.tar.xz
-cd /usr/share/icons/
-sudo tar xf Wow64-Icons.tar.xz
-cd Wow64-Icons
-sudo mv wow64 wow64-Light /usr/share/icons/
-cd /usr/share/icons/
-sudo rm /usr/share/icons/Wow64-Icons.tar.xz
-sudo rm -r /usr/share/icons/Wow64-Icons
+#sudo cp /usr/bin/Yad/icons/Wow64-Icons.tar.xz /usr/share/icons/Wow64-Icons.tar.xz
+#cd /usr/share/icons/
+#sudo tar xf Wow64-Icons.tar.xz
+#cd Wow64-Icons
+#sudo mv wow64 wow64-Light /usr/share/icons/
+#cd /usr/share/icons/
+#sudo rm /usr/share/icons/Wow64-Icons.tar.xz
+#sudo rm -r /usr/share/icons/Wow64-Icons
 ################################DamaDamas#################################
-sudo cp /usr/bin/Yad/icons/DamaDamas-icon-theme-0.7.zip /usr/share/icons/DamaDamas-icon-theme-0.7.zip
-cd /usr/share/icons/
-sudo unzip -q DamaDamas-icon-theme-0.7.zip
-sudo rm /usr/share/icons/DamaDamas-icon-theme-0.7.zip
+#sudo cp /usr/bin/Yad/icons/DamaDamas-icon-theme-0.7.zip /usr/share/icons/DamaDamas-icon-theme-0.7.zip
+#cd /usr/share/icons/
+#sudo unzip -q DamaDamas-icon-theme-0.7.zip
+#sudo rm /usr/share/icons/DamaDamas-icon-theme-0.7.zip
 ################################Papirus####################################
-sudo cp /usr/bin/Yad/icons/papirus-icon-theme-20210501.tar.xz /usr/share/icons/papirus-icon-theme-20210501.tar.xz
-cd /usr/share/icons/
-sudo tar xf papirus-icon-theme-20210501.tar.xz
-sudo rm papirus-icon-theme-20210501.tar.xz AUTHORS LICENSE Makefile
-sleep 5
+#sudo cp /usr/bin/Yad/icons/papirus-icon-theme-20210501.tar.xz /usr/share/icons/papirus-icon-theme-20210501.tar.xz
+#cd /usr/share/icons/
+#sudo tar xf papirus-icon-theme-20210501.tar.xz
+#sudo rm papirus-icon-theme-20210501.tar.xz AUTHORS LICENSE Makefile
+#sleep 5
 }
 
 
